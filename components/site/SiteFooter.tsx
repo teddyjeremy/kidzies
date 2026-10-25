@@ -33,7 +33,7 @@ export function SiteFooter() {
       </div>
       <div className="border-t border-white/10">
         <p className="mx-auto max-w-7xl px-4 py-5 text-xs sm:px-6">
-          © {new Date().getFullYear()} Kidzies. This is a demonstration deployment: all names, schools and records are fictional.
+          © {new Date().getFullYear()} Kidzies.
         </p>
       </div>
     </footer>

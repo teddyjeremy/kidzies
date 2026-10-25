@@ -58,7 +58,7 @@ export function LoginForms({ initialType, initialId, demo, next }: { initialType
 
       {demo && (
         <p className="mt-4 rounded-2xl bg-sun-100 p-3 text-sm font-semibold">
-          You are signing in to a <strong>demonstration account</strong> with fictional data. The demo password is filled in for you.
+          You are signing in to a <strong>demo account</strong>. The demo password is filled in for you.
         </p>
       )}
 

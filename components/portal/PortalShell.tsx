@@ -21,7 +21,7 @@ export function PortalShell({ user, nav, accent, children }: { user: CurrentUser
       <div className="flex min-w-0 flex-1 flex-col">
         <header className="flex items-center justify-between gap-3 border-b border-ink-900/5 bg-white/80 px-4 py-3 backdrop-blur sm:px-6 lg:justify-end">
           {user.is_demo && (
-            <span className="rounded-full bg-sun-100 px-3 py-1 text-xs font-bold text-ink-700">Demo account · fictional data · some actions are restricted</span>
+            <span className="rounded-full bg-sun-100 px-3 py-1 text-xs font-bold text-ink-700">Demo account · some actions are restricted</span>
           )}
           <div className="lg:hidden"><AccountBlock user={user} compact /></div>
         </header>

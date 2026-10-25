@@ -12,7 +12,6 @@ export default function Privacy() {
         <p><strong>What we never do.</strong> No adverts, no selling data, no third-party tracking, no public profiles and no open chat for children.</p>
         <p><strong>Security.</strong> Passwords are stored as one-way hashes, sessions expire, and sensitive actions are audit logged.</p>
         <p><strong>Your rights.</strong> Ask the school to see, correct or delete your family&apos;s information.</p>
-        <p className="text-sm">This demonstration site uses fictional demo data.</p>
       </div>
     </PublicPage>
   );

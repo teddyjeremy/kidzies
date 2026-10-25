@@ -17,7 +17,7 @@ export async function run<T>(fn: () => Promise<T>): Promise<ActionResult<T>> {
 
 /** Maps database error codes returned in `{ ok: false, error }` payloads to friendly text. */
 export const DB_MESSAGES: Record<string, string> = {
-  demo_restricted: "This is a protected demonstration record, so this action is switched off in the public demo.",
+  demo_restricted: "This is a protected demo record, so this action is switched off in the demo.",
   rate_limited: "Too many attempts. Please wait a few minutes and try again.",
   email_exists: "An account with that email already exists.",
   not_accepted: "Only accepted applications can be enrolled.",

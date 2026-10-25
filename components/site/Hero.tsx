@@ -41,11 +41,6 @@ export function Hero() {
             <Link href="/#demo" className="btn btn-primary text-lg">Explore Kidzies</Link>
             <Link href="/how-it-works" className="btn btn-secondary text-lg">How It Works</Link>
           </div>
-          <ul className="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-sm font-bold text-ink-700">
-            <li>✓ Teacher-guided activities</li>
-            <li>✓ No ads or trackers</li>
-            <li>✓ Works on tablets &amp; laptops</li>
-          </ul>
         </div>
         <div className="relative h-[360px] sm:h-[460px]">
           {webgl === "full" || webgl === "low" ? (

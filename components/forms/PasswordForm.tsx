@@ -3,7 +3,7 @@ import { changePasswordForm } from "@/app/actions/parent";
 
 export function PasswordForm({ protectedAccount }: { protectedAccount: boolean }) {
   if (protectedAccount) {
-    return <p className="rounded-2xl bg-sun-100 p-3 text-sm">This is a shared demonstration account, so its password cannot be changed.</p>;
+    return <p className="rounded-2xl bg-sun-100 p-3 text-sm">This is a shared demo account, so its password cannot be changed.</p>;
   }
   return (
     <ActionForm action={changePasswordForm} submitLabel="Change password" successMessage="Password changed. Other devices were signed out." resetOnSuccess>

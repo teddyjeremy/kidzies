@@ -10,7 +10,7 @@ export default async function AdminHome() {
   const pending = (o.applications.submitted ?? 0) + (o.applications.under_review ?? 0) + (o.applications.information_required ?? 0);
   return (
     <>
-      <PageHeader title="School overview" description={o.is_demo ? "Demo administrator: you see and manage demonstration records only." : undefined} />
+      <PageHeader title="School overview" description={o.is_demo ? "Demo administrator: you see and manage demo records only." : undefined} />
       <div className="grid gap-4 sm:grid-cols-3 lg:grid-cols-6">
         <Stat label="Students" value={o.students} /><Stat label="Guardians" value={o.guardians} color="#1fbf85" />
         <Stat label="Teachers" value={o.teachers} color="#8a6cf0" /><Stat label="Classes" value={o.classes} color="#ff8a1f" />

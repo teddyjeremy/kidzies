@@ -22,13 +22,9 @@ export function DemoAccounts() {
     <section id="demo" aria-labelledby="demo-title" className="scroll-mt-24 bg-gradient-to-b from-sun-100 to-cream py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <div className="mx-auto max-w-2xl text-center">
-          <span className="inline-flex items-center gap-2 rounded-full bg-white px-4 py-1.5 text-sm font-bold text-coral-600 shadow-sm">
-            Demonstration accounts · fictional data only
-          </span>
-          <h2 id="demo-title" className="mt-4 text-4xl font-bold sm:text-5xl">Try the Kidzies Demo</h2>
+          <h2 id="demo-title" className="text-4xl font-bold sm:text-5xl">Try the demo</h2>
           <p className="mt-4 text-lg text-ink-700">
-            Every role is ready to explore, with no sign-up needed. These are shared demo logins with limited permissions and
-            fictional records. They never touch real student data.
+            Every role is ready to explore, with no sign-up needed. These are shared demo logins with limited permissions.
           </p>
         </div>
         <ul className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-5">

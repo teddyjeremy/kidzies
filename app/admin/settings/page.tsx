@@ -23,7 +23,7 @@ export default async function AdminSettings() {
             <div><label className="label" htmlFor="daily_goal">Daily activity goal</label><input id="daily_goal" type="number" min={1} max={10} name="daily_goal" className="input" defaultValue={s.daily_goal} /></div>
           </fieldset>
         </ActionForm>
-        <p className="mt-4 text-xs text-ink-500">Demo mode is {s.demo_mode ? "on" : "off"}. New records created while demo mode is on are marked as demonstration data.</p>
+        <p className="mt-4 text-xs text-ink-500">Demo mode is {s.demo_mode ? "on" : "off"}. New records created while demo mode is on are marked as demo records.</p>
       </Panel>
     </>
   );
