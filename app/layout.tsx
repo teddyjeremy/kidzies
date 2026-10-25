@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Fredoka, Nunito } from "next/font/google";
 import "./globals.css";
+import { SITE_NAME, SITE_TAGLINE, SITE_URL } from "@/lib/site";
 
 const fredoka = Fredoka({ variable: "--font-fredoka", subsets: ["latin"], weight: ["400", "500", "600", "700"] });
 const nunito = Nunito({ variable: "--font-nunito", subsets: ["latin"], weight: ["400", "600", "700", "800"] });
@@ -10,6 +11,16 @@ export const metadata: Metadata = {
   description:
     "Kidzies is an online kindergarten where children learn through play in a 3D toy world, with portals for parents, teachers and schools.",
   icons: { icon: "/favicon.svg" },
+  metadataBase: new URL(SITE_URL),
+  alternates: { canonical: "/" },
+  openGraph: {
+    type: "website",
+    url: SITE_URL,
+    siteName: SITE_NAME,
+    title: `${SITE_NAME} · ${SITE_TAGLINE}`,
+    description: "Children learn through play in a 3D toy world, with portals for parents, teachers and schools.",
+  },
+  twitter: { card: "summary", title: `${SITE_NAME} · ${SITE_TAGLINE}` },
 };
 
 export const viewport: Viewport = { themeColor: "#ff6f59", width: "device-width", initialScale: 1 };

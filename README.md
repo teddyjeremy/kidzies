@@ -1,5 +1,7 @@
 # Kidzies
 
+**Live:** https://kidzies.jeremyteddy.dev
+
 A playful 3D learning world for children aged 3–6, with portals for parents, teachers, admissions staff and school administrators.
 
 Children sign in with a school-issued **student code** and password, then explore a toy island where every place teaches something: letters in the ABC Garden, counting in the Number Playground, animals, stories, shapes and colours, life skills and a creative studio. Every completed activity is saved and shows up for the child's parents and teachers.
@@ -65,11 +67,11 @@ Apply the migrations in `supabase/migrations` in order, then run `supabase/seed.
 | `npm run typecheck` | TypeScript check |
 | `npm run lint` | ESLint |
 | `npm test` | Unit tests |
-| `npm run e2e` | Playwright end-to-end tests (set `E2E_BASE_URL` to test a deployment) |
+| `npm run e2e` | Playwright end-to-end tests against https://kidzies.jeremyteddy.dev (set `E2E_BASE_URL=http://localhost:3000` to test locally) |
 
 ## Deployment
 
-Deploy to Vercel and set `NEXT_PUBLIC_SUPABASE_URL` and `SUPABASE_ANON_KEY` for Production and Preview.
+Deploy to Vercel and set `NEXT_PUBLIC_SUPABASE_URL` and `SUPABASE_ANON_KEY` for Production and Preview. Production is served at https://kidzies.jeremyteddy.dev (override with `NEXT_PUBLIC_SITE_URL`).
 
 ## Privacy and safety
 
