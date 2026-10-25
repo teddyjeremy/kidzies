@@ -9,7 +9,7 @@ import type { AreaKey, StudentHome } from "@/types";
 import { AREAS, AREA_BY_KEY } from "@/lib/learning/areas";
 import { nextUnlock, unlockedItems, UNLOCKABLES } from "@/lib/learning/scoring";
 import { useReducedMotion, useWebGLSupport } from "@/lib/client/hooks";
-import { useSound } from "@/lib/client/sound";
+import { usePlaygroundMusic, useSound } from "@/lib/client/sound";
 import { ErrorBoundary } from "@/components/ui/ErrorBoundary";
 import { HelpButton, LogoutButton, SoundToggle, StarCounter } from "@/components/playground/TopBar";
 
@@ -48,6 +48,7 @@ export function PlaygroundHome({ home }: { home: StudentHome }) {
   const reduced = useReducedMotion();
   const webgl = useWebGLSupport();
   const { speak, chime } = useSound();
+  usePlaygroundMusic();
   const [stickersOpen, setStickersOpen] = useState(false);
   const name = home.student.nickname || home.student.first_name;
 

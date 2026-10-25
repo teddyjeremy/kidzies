@@ -7,9 +7,9 @@ import { useSound } from "@/lib/client/sound";
 import { logout } from "@/app/actions/auth";
 
 export function SoundToggle() {
-  const { enabled, toggle } = useSound();
+  const { enabled, toggle, chime } = useSound();
   return (
-    <button type="button" onClick={toggle} className="btn btn-secondary btn-sm !min-h-12 !px-4" aria-pressed={enabled} aria-label={enabled ? "Turn sound off" : "Turn sound on"}>
+    <button type="button" onClick={() => { if (!enabled) setTimeout(() => chime("click"), 0); toggle(); }} className="btn btn-secondary btn-sm !min-h-12 !px-4" aria-pressed={enabled} aria-label={enabled ? "Turn sound off" : "Turn sound on"}>
       {enabled ? <Volume2 size={22} /> : <VolumeX size={22} />}
       <span className="hidden sm:inline">{enabled ? "Sound on" : "Sound off"}</span>
     </button>
